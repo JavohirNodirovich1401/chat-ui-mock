@@ -2,7 +2,7 @@
 
 Minimal chat interfeysi: scroll, message states, typing indicator, light/dark tema sinxronlash.
 
-🔗 [Live Demo](https://chat-ui-perfect.netlify.app)
+🔗 [Live Demo](https://chat-ui-perfect.netlify.app/)
 
 ## Texnologiyalar
 - **HTML** — semantik tuzilma
