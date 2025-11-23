@@ -17,6 +17,7 @@ Minimal chat interfeysi: scroll, message states, typing indicator, light/dark te
 - 📱 Mobilga moslashgan layout
 
 ## Screenshot
-![Preview](img_pack/Screenshot%202025-11-22%20221909.png)
+![Preview](<img width="1887" height="912" alt="image" src="https://github.com/user-attachments/assets/183de66b-8197-40ef-a8f8-890ff581b440" />
+)
 
 ## Fayl struktura
