@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chat UI — Javo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="left">
+      <button class="icon-btn" id="backBtn" aria-label="Orqaga">←</button>
+      <div class="chat-meta">
+        <h1 class="chat-title">Javo Team</h1>
+        <p id="presence" class="muted">Online</p>
+      </div>
+    </div>
+    <div class="right">
+      <button class="icon-btn" id="themeToggle" aria-label="Tema">🌙</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="messages" class="messages" aria-live="polite" aria-label="Xabarlar ro‘yxati">
+      <!-- Time separator -->
+      <div class="separator"><span>Bugun</span></div>
+
+      <!-- Sample incoming -->
+      <article class="msg incoming">
+        <img class="avatar" src="https://i.pravatar.cc/40?img=12" alt="" aria-hidden="true" />
+        <div class="bubble">
+          <p>Assalomu alaykum! Loyihani ko‘rdingizmi?</p>
+          <div class="meta">
+            <time>22:04</time>
+          </div>
+        </div>
+      </article>
+
+      <!-- Sample outgoing with states -->
+      <article class="msg outgoing">
+        <div class="bubble">
+          <p>Ha, juda yaxshi. Chat UI mock tayyorlayapman.</p>
+          <div class="meta">
+            <time>22:05</time>
+            <span class="state" data-state="delivered" title="Yetkazildi">✔✔</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="msg incoming">
+        <img class="avatar" src="https://i.pravatar.cc/40?img=12" alt="" aria-hidden="true" />
+        <div class="bubble">
+          <p>Light/dark sinxron bo‘ladimi?</p>
+          <div class="meta">
+            <time>22:06</time>
+          </div>
+        </div>
+      </article>
+
+      <!-- Typing indicator -->
+      <div id="typing" class="typing incoming">
+        <img class="avatar" src="https://i.pravatar.cc/40?img=12" alt="" aria-hidden="true" />
+        <div class="dots" aria-label="Yozmoqda">
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </section>
+
+    <form id="composer" class="composer" autocomplete="off" aria-label="Xabar yozish">
+      <button class="icon-btn" type="button" id="attachBtn" aria-label="Fayl biriktirish">📎</button>
+      <input id="messageInput" type="text" placeholder="Xabar yozing..." aria-label="Xabar matni" />
+      <button class="send-btn" type="submit" aria-label="Yuborish">➤</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
